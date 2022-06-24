@@ -1456,6 +1456,7 @@ public class QMUITabSegment extends HorizontalScrollView {
 
             int color = isSelected ? getTabSelectedColor(tab) : getTabNormalColor(tab);
             mTextView.setTextColor(color);
+            mTextView.getPaint().setFakeBoldText(isSelected);
 
             Drawable icon = tab.getNormalIcon();
             if (isSelected) {
